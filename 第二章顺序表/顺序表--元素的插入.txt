@@ -1,0 +1,22 @@
+int insert(Seq *L,int x,int k)
+{
+	
+	if(L->last>=N-1)
+	{
+		return false;
+	}
+	
+	if(k<0||k>(L->last+1))
+	{
+		return false;
+	}
+	
+	for(int i = L->last;i>=k;i--)
+	{
+		L->last[i+1] = L->data[i];
+	}
+	L->data[k] = x;
+	L->last =L->last+1;
+	return true;
+}
+//时间复杂度O(n)

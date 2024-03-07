@@ -1,0 +1,22 @@
+/*
+根据公式pi=4-4/3+4/5-4/7+。。。求解pi
+*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	double x = 4;
+	int i = 1;
+	int m = 1;
+	while(1)
+	{
+		x = x+(double)(-1)*m*4/(2*i+1);
+		i++;
+		m = m*(-1);
+		if(x>=3.14-0.000001&&x<=3.14+0.000001)
+		{
+			break;
+		}
+	}
+	printf("i=%d,x=%f\n",i,x);
+}

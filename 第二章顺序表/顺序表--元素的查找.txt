@@ -1,0 +1,15 @@
+int locate(Seq *L,int key)
+{
+	for(int i = 0;i<L->last;i++)
+	{
+		if(L->data[i]==key)
+		{
+			return i;
+		}
+	}
+	
+	return -1;
+}
+
+//时间复杂度O(n)
+

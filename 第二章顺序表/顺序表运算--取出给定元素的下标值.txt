@@ -1,0 +1,15 @@
+bool get(Seq *L,int i,int *e)
+{
+	if(i<0||i>L->last)
+	{
+		return false;
+	}
+	
+	if(L->last<=0)
+	{
+		return false;
+	}
+	
+	*e = L->data[i];
+	return true;
+}
