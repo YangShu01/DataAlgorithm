@@ -1,0 +1,12 @@
+void insert_before(DLinkListNode *p,int x)
+{
+	DLinkListNode *s;
+	s->data = x;
+	s->prior = p->prior;
+	if(p->prior!=NULL)
+	{
+		p->prior->next = s;
+	}
+	s->next = p;
+	p->prior = s;
+}

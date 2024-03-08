@@ -1,0 +1,7 @@
+LinkListNode *delete_after(LinkListNode *ptr)
+{
+	LinkListNode *fptr;
+	fptr = ptr->next;
+	ptr->next = fptr->next;
+	return fptr;
+}

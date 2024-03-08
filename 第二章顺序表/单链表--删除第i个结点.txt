@@ -1,0 +1,10 @@
+LinkListNode *delete_i(LinkListNode *head,int i)
+{
+	LinkListNode *ptr,*qptr = NULL;
+	ptr = get(head,i-1);
+	if(ptr!=NULL&&ptr->next!=NULL)
+	{
+		qptr = delete_after(ptr);
+	}
+	return qptr;
+}

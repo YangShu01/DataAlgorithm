@@ -1,0 +1,5 @@
+typedef struct Dnode
+{
+	int data;
+	struct Dnode *prior,*next;
+}DLinkListNode;

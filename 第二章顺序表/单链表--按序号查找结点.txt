@@ -1,0 +1,23 @@
+LinkListNode *get(LinkListNode *head,int i)
+{
+	int j = 0;
+	LinkListNode *p;
+	p = head;
+	if(i==0)
+	{
+		return NULL;
+	}
+	while(j<i&&p->next!=NULL)
+	{
+		p = p->next;
+		j++;
+	}
+	
+	if(i==j)
+	{
+		return p;
+	}else{
+		return NULL;
+	}
+	
+}

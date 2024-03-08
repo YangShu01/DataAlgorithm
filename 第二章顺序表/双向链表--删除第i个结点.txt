@@ -1,0 +1,10 @@
+DLinkListNode *delete_i(DLinkNode *head,int i)
+{
+	DLinkListNode *ptr;
+	ptr = get(head,i);
+	if(ptr!=null)
+	{
+		ptr = delete(ptr);
+	}
+	return ptr;'
+}

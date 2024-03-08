@@ -1,0 +1,8 @@
+void print(LinkListNode *L)
+{
+    if(L->next!=NULL)
+    {
+        print(L->next);
+        printf("%d",L->data);
+    }
+}

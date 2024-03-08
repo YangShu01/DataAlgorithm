@@ -1,0 +1,9 @@
+void insert(LinkListNode *ptr,int x)
+{
+	LinkListNode *s;
+	s->data= x;
+	s->next = ptr->next;
+	ptr->next = s;
+}
+
+

@@ -1,0 +1,7 @@
+void connect(LinkListNode *ra,LinkListNode *rb)
+{
+	LinkListNode *p;
+	p = ra->next;
+	ra->next = rb->next->next;
+	rb->next = p;]
+}

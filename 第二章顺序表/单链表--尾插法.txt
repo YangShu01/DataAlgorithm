@@ -1,0 +1,14 @@
+LinkListNode *create(int a[],int n)
+{
+	LinkListNode *head,*p,*q;
+	q = head;
+	for(int i = 0;i<n;i++)
+	{
+		p->data = a[i];
+		q->next = p;
+		q = p;
+	}
+	
+	p->next = NULL;
+	return head;
+}

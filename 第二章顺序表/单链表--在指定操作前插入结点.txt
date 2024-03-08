@@ -1,0 +1,13 @@
+void insert_before(LinkListNode *head,LinkListNode *ptr,int x)
+{
+	LinkListNode *s,*qptr;
+	s->data = x;
+	qptr = head;
+	while(qptr->next!=ptr)
+	{
+		qptr= qptr->next;
+	}
+	s->next = ptr;
+	qptr->next = s;
+}
+

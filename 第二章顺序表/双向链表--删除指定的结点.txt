@@ -1,0 +1,8 @@
+DLinkListNode *delete(DLinkListNode *ptr)
+{
+	ptr->prior->next = ptr->next;
+	ptr->next->prior = ptr->prior;
+	return ptr;
+}
+
+

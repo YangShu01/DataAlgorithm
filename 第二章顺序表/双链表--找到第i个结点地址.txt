@@ -1,0 +1,12 @@
+DLinkListNode *get(DLinkListNode *head,int i)
+{
+	int j = 1;
+	DLinkListNode *ptr;
+	ptr = head->next;
+	while(j++<i)
+	{
+		ptr = ptr->next;
+	}
+	
+	return ptr;
+}
