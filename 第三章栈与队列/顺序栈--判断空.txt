@@ -1,0 +1,4 @@
+int empty(SeqStack *s)
+{
+    return (s->top==-1);
+}

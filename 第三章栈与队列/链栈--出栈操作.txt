@@ -1,0 +1,7 @@
+LinkStack *pop(LinkStack *top,int *x)
+{
+    *x = top->data;
+    p = top;
+    top = top->next;
+    return top;
+}

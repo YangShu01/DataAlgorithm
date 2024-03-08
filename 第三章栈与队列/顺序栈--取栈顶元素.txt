@@ -1,0 +1,10 @@
+int get(SeqStack *s,int *x)
+{
+    if(s->top==-1)
+    {
+        return false;
+    }
+
+    *x = s->stack[s->top];
+    return true;
+}

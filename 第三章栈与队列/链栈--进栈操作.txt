@@ -1,0 +1,8 @@
+LinkStack *push(LinkStack *top,int x)
+{
+    LinkStack *p;
+    p->data = x;
+    p->next = top;
+    top = p;
+    return top;
+}
